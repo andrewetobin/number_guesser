@@ -1,0 +1,26 @@
+/* Universal Font Elements */
+* {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Header Elements */
+header {
+  height: 6em;
+  margin: 0 0 2em 0;
+  text-align: center;
+  background-color: #404041;
+}
+
+header p {
+  padding: .3em;
+  margin: 0;
+  font-size: 3em;
+  color: #E6E7E8;
+}
+
+.number-text {
+  font-size: 1em;
+  font-weight: bold;
+  color: #ED458B;
+}
