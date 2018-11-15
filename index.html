@@ -12,20 +12,22 @@
         <span class="number-text">Number</span> Guesser
       </p>
     </header>
-    <section>
-      <p>
+    <section class="user-input">
+      <p class="range">
         Guess a Number Between 1 and 100
       </p>
-      <input placeholder="Enter your guess">
-      <p>
-        <input type="button" value="Guess" disabled>
-        <input type="button" value="Clear" disabled>
+      <input class="user-input-field" placeholder="Enter your guess">
+      <p class="guess-class-buttons">
+        <input type="button" class="button user-input-button user-input-guess-button" value="Guess" disabled>
+        <input type="button" class="button user-input-button user-input-clear-button" value="Clear" disabled>
       </p>
     </section>
-    <section>
-      <p>Your Last Guess Was</p>
-      <p>--</p>
-      <input type="button" value="Reset" disabled>
+    <section class="last-guess">
+      <p class="last-guess-text">Your Last Guess Was</p>
+      <p class="last-guess-number-display">--</p>
+      <p class="last-guess-output"> </p>
+      <p class="game-win-message"> </p>
+      <input type="button" class="button last-guess-reset-button" value="Reset" disabled>
     </section>
     <script src="scripts.js"></script>
   </body>
