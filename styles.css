@@ -3,7 +3,6 @@
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
 }
-
 /* Header Elements */
 header {
   height: 6em;
@@ -11,7 +10,6 @@ header {
   text-align: center;
   background-color: #404041;
 }
-
 header p {
   padding: .3em;
   margin: 0;
@@ -22,80 +20,96 @@ header p {
 .number-text {
   font-size: 1em;
   font-weight: bold;
-  color: #ED458B;
+  color: #EB008B;
 }
 
-/* Input Field Elements */
-.user-input {
-  text-align: center;
+/* Input Field */
+.form {
+ display: flex;
+ justify-content: center;
+ margin: 20px;
+
 }
-.range {
-  font-size: 1.25em;
-}
-.user-input-field {
+
+.guessField {
   width: 500px;
   height: 50px;
   margin-bottom: .5em;
   padding-left: 0.25em;
   font-size: 1.75em;
 }
-
-/* Button Elements */
-.button {
-  background-color: #929497;
-  border-radius: 24px;
-  color: #FFFFFF;
+.guessField::placeholder {
+  color: #E6E7E8;
 }
 
-.button:disabled {
-  background-color: #D0D2D3;
+.buttons {
+ display: flex;
+ justify-content: center;
+ align-content: space-between;
+}
+
+.button {
+ background-color: #929497;
+ color: #FFFFFF;
+ border-radius: 24px;
+ font-size: 24px;
+ font-weight: 300;
+ width: 12.5%;
+ margin: 10px;
+}
+
+.button.wider{
+ width: 25%;
+}
+.resetButton {
+ background-color: #929497;
+ color: #FFFFFF;
+ border-radius: 12px;
+ font-size: 24px;
+ font-weight: 300;
+ width: 25%;
+ margin: 10px;
 }
 
 .button:hover {
-  background-color: #EB008B;
+ background-color: #EB008B;
 }
 
-.guess-class-buttons {
-  margin: 0;
-}
-.user-input-button {
-  width: 225px;
-  height: 50px;
-  margin: 0.25em 0.25em 1.5em;
-  font-size: 1.5em;
-}
-.last-guess-reset-button {
-  width: 500px;
-  height: 50px;
-  font-size: 1.5em;
+.button:disabled {
+ background-color:#929497;
+ opacity: 0.5;
 }
 
-
-/* Text Elements */
-.last-guess {
-  text-align: center;
+.resultParas {
+ text-align: center;
 }
 
-.last-guess-text,
-.last-guess-output,
-.game-win-message {
-  margin: 0;
-  font-size: 2em;
-  text-decoration: none;
-  color: #404041;
+.guesses h3 {
+ font-size: 30px;
+ color: #EB008B;
+ margin: 0px 0;
+ font-size: 150px;
+ font-weight: 300;
 }
 
-.last-guess-output {
-  height: 2em;
-}
-.game-win-message {
-  height: 2em;
-  color: #EB008B;
+p {
+ font-size: 25px;
 }
 
-.last-guess-number-display {
-  margin: 0;
-  padding: 0;
-  font-size: 9em;
-  color: #EB008B;
+.rangeForm {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.rangeField {
+ width: 50px;
+ height: 25px;
+ font-size:18px;
+ font-weight: 100;
+}
+
+.rangeHeader {
+ text-align: center;
+ font-weight: 700;
 }

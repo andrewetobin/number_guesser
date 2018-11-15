@@ -1,34 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Number Guesser</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,700">
-    <link type="text/css" rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Number Guesser</title>
+
   </head>
+
   <body>
     <header>
       <p>
         <span class="number-text">Number</span> Guesser
       </p>
     </header>
-    <section class="user-input">
-      <p class="range">
-        Guess a Number Between 1 and 100
-      </p>
-      <input class="user-input-field" placeholder="Enter your guess">
-      <p class="guess-class-buttons">
-        <input type="button" class="button user-input-button user-input-guess-button" value="Guess" disabled>
-        <input type="button" class="button user-input-button user-input-clear-button" value="Clear" disabled>
-      </p>
-    </section>
-    <section class="last-guess">
-      <p class="last-guess-text">Your Last Guess Was</p>
-      <p class="last-guess-number-display">--</p>
-      <p class="last-guess-output"> </p>
-      <p class="game-win-message"> </p>
-      <input type="button" class="button last-guess-reset-button" value="Reset" disabled>
-    </section>
+
+    <div class="form">
+      <input type="text" id="guessField" class="guessField" placeholder="Enter your guess" onkeypress="buttonEnabler()">
+    </div>
+
+    <div class="buttons">
+      <input class="button" type="submit" value="Guess" id="guessSubmit">
+      <button class="button" id="clearButton" onclick="document.getElementById('guessField').value = ''" disabled="disabled">Clear</button>
+    </div>
+
+    <div class="resultParas">
+      <div class="guesses"></div>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <div class="buttons">
+        <input class="button wider" type="reset" value="Reset" id="resetButton" disabled="disabled">
+    </div>
+
+    <h3 class="rangeHeader">Custom Range:</h3>
+    <div class='rangeForm'>
+        <label for="#minField">Minimum</label>
+        <input type="number" class="rangeField" id="minField" value=0>
+
+        <label for="#maxField">Maximum</label>
+        <input type="number" class="rangeField" id="maxField" value=100>
+
+        <input class="button" type="submit" value="Set" id="rangeSubmit">
+    </div>
+
     <script src="scripts.js"></script>
   </body>
 </html>
