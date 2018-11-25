@@ -1,5 +1,5 @@
- README
-# number_guesser
+
+# Number Guesser
 
 
 ## Introduction and Function
@@ -10,6 +10,3 @@ or setting their own range.
 ## Demo app 
 
 * Visit app at 
-
-
-### Contributors
